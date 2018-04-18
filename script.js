@@ -10,7 +10,7 @@ var c = canvas.getContext('2d');
 const setWidth = 20;
 const setHeight = 150;
 const ballRadius = 20;
-var dist = 5;
+var dist = 7;
 var setY = (canvas.height / 2) - (setHeight / 2);
 var player1;
 var player2;
