@@ -130,14 +130,14 @@ function Ball(x, y, dx, dy, radius) {
     // Player 1
     if ((this.x <= (this.radius + setWidth))
     && ((this.y >= player1.y) && (this.y <= player1.y + setHeight))) {
-      this.dx = -this.dx * 1.2;
+      this.dx = -this.dx * 1.1;
       this.dy *= 1.1;
       this.x += 5;
     }
     // Player 2
     if ((this.x >= (canvas.width - (this.radius + setWidth)))
     && ((this.y >= player2.y) && (this.y <= player2.y + setHeight))) {
-      this.dx = -this.dx * 1.2;
+      this.dx = -this.dx * 1.1;
       this.dy *= 1.1;
       this.x -= 5;
     }
@@ -174,8 +174,8 @@ function nextRound() {
   rounds++;
   dist += 0.05;
   console.log("New round!");
-  ball.dx = (Math.random() * 5) + (rounds / 10) + 3;
-  ball.dy = (Math.random() * 3) + (rounds / 10) + 4;
+  ball.dx = (Math.random() * 5) + (rounds / 20) + 3;
+  ball.dy = (Math.random() * 3) + (rounds / 20) + 4;
   if (p1Score > p2Score) {
     ball.dx = -ball.dx;
   }
