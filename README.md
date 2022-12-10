@@ -1,4 +1,4 @@
 # Pong
 
 This repository is published at:
-https://cnfgsean.github.io/Pong/
+https://seancfong.github.io/Pong/
